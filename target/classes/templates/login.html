@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet"   th:href="@{/css/main.css}">
+</head>
+<body>
+    <div class="container">
+            <div id="alert"></div>
+    <div class="login-form">
+        <h2 class="text-start mb-4">Login</h2>
+        <form id="loginForm">
+            <div class="error"></div>
+                <input name="email" type="email" class="form-control" id="email" placeholder="@example.com">
+            <div class="error"></div>
+            <div class="form-floating mb-3">
+                <input name="password" type="password" class="form-control" id="password" placeholder="Şifre">
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Login</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="/register">Sing up</a></p>
+    </div>
+</div>
+<script src="/js/main.js"></script>
+
+</body>
+</html>

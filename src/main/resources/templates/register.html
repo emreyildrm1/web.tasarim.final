@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet"   th:href="@{/css/main.css}">
+
+</head>
+<body>
+    <div class="container">
+<div class="header">
+    <h1>REGISTER</h1>
+    <ul>
+        <li><a href="#"><img src="icons/Facebookicon.png"  alt=""></a></li>
+        <li><a href="#"><img src="icons/Yahooicon.png" alt=""></a></li>
+        <li><a href="#"><img src="icons/Googleicon.png" alt=""></a></li>
+    </ul>
+    <p>or use your email address:</p>
+</div>
+<div id="alert"></div>
+<form id="registerForm">
+    <input type="text" id="name" name="name" placeholder="İsim" style="margin-top: 10px;" required>
+    <input type="email" id="email" name="email" placeholder="E-posta" >
+    <input type="password" name="password"  id="password" placeholder="Şifre" >
+    <input type="password" id="password2" placeholder="Şifreyi Tekrarla" >
+    <button type="submit">CREATE ACCOUNT</button>
+    <p id="message"></p>                        
+</form>        
+    <p>Already have an Account?<span><a id="login_link" href="/login">Sign in</a></span></p>
+</div>
+<script th:src="@{/js/main.js}"></script>
+</body>
+</html>
